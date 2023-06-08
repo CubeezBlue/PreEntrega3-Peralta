@@ -1,0 +1,136 @@
+// Imports
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/galeria";
+@import "pages/contacto";
+@import "pages/blog";
+@import "pages/cancionero";
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Globales
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $azul;
+    max-width: 100%;
+    min-height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer {
+    margin-top: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 5px;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 2px;
+    color: $azul;
+    text-align: center;
+    margin: 2rem;
+}
+
+h3 {
+    color: $azul;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1240px;
+    padding: 1rem;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.line {
+    display: block;
+    background-color: $blanco;
+    width: 30%;
+    height: 2px;
+}
+
+// Header
+@include desktop {
+    // Header
+    .barra-2 {
+        display: none;
+    }
+    .header-2 {
+        justify-content: space-between;
+        #logo-2 {
+            display: block;
+        }
+        .barra-1 {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2rem;
+            a {
+                color: $azul;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: $azul;
+    background-color: $blanco;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    margin-top: 50px;
+}
+
+.footer a {
+    color: $azul;
+    font-weight: bold;
+}
+
+.footer h2 {
+    color: $azul;
+}
+
+.barra-footer {
+    display: none;
+}

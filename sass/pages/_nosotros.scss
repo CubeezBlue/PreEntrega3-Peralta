@@ -1,0 +1,110 @@
+//Import 
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// Header 
+.header-2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: $blanco;
+    -webkit-box-shadow: 3px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 11px 17px -4px rgba(0, 0, 0, 0.75);
+    .barra-1 {
+        display: none;
+    }
+    h1 {
+        color: $azul;
+    }
+    #logo-2 {
+        display: none;
+    }
+}
+
+.btn-nav {
+    background-color: $naranja;
+}
+
+.barra-nav {
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.2rem;
+    background-color: $naranja;
+    a {
+        color: $blanco;
+    }
+}
+
+//Contenido Principal
+.container-2 {
+    margin: auto;
+    max-width: 1240px;
+    padding: 1rem;
+    background-color: $blanco;
+    width: 70%;
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 2rem;
+        padding: 1rem;
+        img {
+            max-width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    .texto-nosotros {
+        line-height: 1.5rem;
+        p {
+            margin-top: 10px;
+        }
+    }
+}
+
+// Media Query
+@include desktop {
+    // Contenido Principal
+    .container-2 {
+        .nosotros {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    // Footer
+    footer {
+        .barra-footer {
+            display: block;
+            .barra-nav {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-top: 1rem;
+                background-color: $blanco;
+                .enlace-2 {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+                .enlace-3 {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .enlace-4 {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                .enlace-5 {
+                    grid-column: 3;
+                    grid-row: 3;
+                }
+            }
+        }
+    }
+}

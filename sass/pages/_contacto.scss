@@ -1,0 +1,103 @@
+// Import 
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// Contenido Principal
+.container-contacto {
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    max-height: 100%;
+    padding: 1rem;
+    background-color: $naranja;
+    border: 3px solid #000000;
+    -webkit-box-shadow: 0px 14px 30px -8px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 14px 30px -8px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 14px 30px -8px rgba(0, 0, 0, 0.39);
+    border-radius: 2rem;
+    max-width: 100%;
+    h2 {
+        color: black;
+    }
+    .formulario {
+        max-width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-style: none;
+        gap: 2rem;
+        //Label
+        label {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 5px;
+            margin-left: 10px;
+        }
+        // Inputs
+        .input {
+            border-radius: 1rem;
+            border: 1px solid grey;
+            max-width: 100%;
+            width: 300px;
+            height: 50px;
+        }
+        #consulta {
+            max-width: 100%;
+            max-height: 100px;
+        }
+        // Botones
+        .boton {
+            background-color: wheat;
+            -webkit-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            border-radius: 2rem;
+            border-style: none;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .botones {
+            display: flex;
+            justify-content: right;
+            gap: 1rem;
+        }
+    }
+}
+
+// Media Query
+@include desktop {
+    // Contenido Principal
+    .container-b2 {
+        margin: 0 auto;
+    }
+}
+
+// Footer
+footer {
+    .barra-footer {
+        display: block;
+        .barra-nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 1rem;
+            background-color: $blanco;
+            .enlace-2 {
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .enlace-3 {
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .enlace-4 {
+                grid-column: 3;
+                grid-row: 1;
+            }
+            .enlace-5 {
+                grid-column: 3;
+                grid-row: 3;
+            }
+        }
+    }
+}

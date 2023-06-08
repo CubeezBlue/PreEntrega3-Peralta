@@ -1,0 +1,143 @@
+// Import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// Contenido Principal
+.container-b2 {
+    max-width: 1000px;
+    padding: 1.5rem;
+    h2 {
+        text-align: center;
+        color: whitesmoke;
+    }
+    // Crear Post
+    .crear-post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        // Boton
+        .boton {
+            background-color: wheat;
+            -webkit-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
+            border-radius: 2rem;
+            border-style: none;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+    .division {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 50px;
+            .post {
+                display: flex;
+                gap: 2rem;
+                background-color: beige;
+                border-radius: 1rem;
+                padding: 1rem;
+                -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+    .img-blog {
+        border-radius: 2rem;
+        width: 70px;
+        height: 70px;
+    }
+    .input-post {
+        width: 600px;
+        height: 50px;
+        border-radius: 1rem;
+    }
+}
+
+.menu-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: end;
+}
+
+.icon {
+    width: 50px;
+}
+
+.perfil {
+    display: none;
+}
+
+// Media Query
+@include desktop {
+    // Contenido Principal
+    .container-b2 {
+        margin: 0 auto;
+        .perfil {
+            border: 5px solid whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            position: fixed;
+            right: 0;
+            top: 150px;
+            width: 150px;
+            padding: 1rem;
+            .menu-perfil {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-bottom: 2rem;
+                a {
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+        }
+    }
+    // Footer
+    footer {
+        .barra-footer {
+            display: block;
+            .barra-nav {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-top: 1rem;
+                background-color: $blanco;
+                .enlace-2 {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+                .enlace-3 {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .enlace-4 {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                .enlace-5 {
+                    grid-column: 3;
+                    grid-row: 3;
+                }
+            }
+        }
+    }
+}

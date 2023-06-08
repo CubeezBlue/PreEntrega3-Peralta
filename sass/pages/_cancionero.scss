@@ -1,0 +1,33 @@
+//Import 
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* Cancionero */
+
+// Media Query
+@include desktop {
+    .cancionero {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .albunes {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .albunes-i {
+        width: 100%;
+    }
+    .single {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 100%;
+    }
+    .canciones {
+        width: 250px;
+    }
+}

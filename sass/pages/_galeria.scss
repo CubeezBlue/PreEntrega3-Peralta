@@ -1,0 +1,66 @@
+// Import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// Contenido Principal
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.img-galeria {
+    width: 100px;
+    height: 100px;
+}
+
+.img-galeria:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+}
+
+// Media Query
+@include desktop {
+    // Contenido Principal
+    .img-galeria {
+        width: 200px;
+        height: 200px;
+    }
+    // Footer
+    footer {
+        .barra-footer {
+            display: block;
+            .barra-nav {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-top: 1rem;
+                background-color: $blanco;
+                .enlace-2 {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+                .enlace-3 {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+                .enlace-4 {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+                .enlace-5 {
+                    grid-column: 3;
+                    grid-row: 3;
+                }
+            }
+        }
+    }
+}
