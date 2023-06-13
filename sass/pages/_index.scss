@@ -75,27 +75,35 @@
                 -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
                 box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
                 justify-self: center;
-                width: 90%;
+                width: 70%;
+                .info-noticia {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    max-height: 100%;
+                    max-width: 100%;
+                    h3 {
+                        margin-top: 0.5rem;
+                    }
+                    img {
+                        max-width: 100%;
+                        border-radius: 1rem;
+                        max-height: 500px;
+                    }
+                    a,
+                    p {
+                        color: black;
+                    }
+                }
             }
             
-            .info-noticia {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
+            .noticia:hover {
+                scale: 0.97;
             }
             
-            .noticia img {
-                max-width: 100%;
-                border-radius: 1rem;
-            }
-            
-            .noticia a,
-            .noticia p {
-                color: black;
-            }
-            
-            .noticia-4,
-            .noticia-1 {
+            .noticia-5,
+            .noticia-1,
+            .noticia-3 {
                 display: none;
             }
             
@@ -119,6 +127,13 @@
                         max-height: 430px;
                     }
                 }
+                //Noticia
+                .noticia {
+                    max-width: 70%;
+                    img {
+                        max-height: 500px;
+                    }
+                }
             }
             
             // Tablet
@@ -133,20 +148,16 @@
                 //Noticias
                 .noticias {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
                     grid-template-rows: repeat(2, 1fr);
-                    row-gap: 3rem;
-                    column-gap: 1rem;
+                    gap: 3rem;
                     .noticia {
+                        width: 90%;
                         min-height: 100%;
                         max-width: 100%;
                         img {
-                            max-height: 400px;
+                            max-height: 100%;
                         }
-                    }
-                    .noticia:hover {
-                        scale: 1.01;
-                        transition: 0.5s;
                     }
                     .noticia-1 {
                         display: grid;
@@ -155,14 +166,17 @@
                             max-height: 100%;
                         }
                     }
-                    .noticia-3,
-                    .noticia-2 {
+                    .noticia-3 {
                         display: grid;
+                        grid-column: span 2;
                         img {
                             max-height: 100%;
                         }
                     }
-                    .noticia-5 {
+                    .noticia-2 {
+                        display: grid;
+                    }
+                    .noticia-6 {
                         display: none;
                     }
                 }
@@ -186,40 +200,29 @@
                         max-height: 570px;
                     }
                 }
+                .noticias {
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 3rem;
+                    .noticia {
+                        width: 90%;
+                        img {
+                            max-height: 500px;
+                        }
+                    }
+                    .noticia-5,
+                    .noticia-6 {
+                        display: grid;
+                    }
+                    .noticia-3 {
+                        display: none;
+                    }
+                }
             }
             
             // Pc
             @include desktop {
                 // Main
-                //Noticias
-                .noticias {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    gap: 3rem;
-                    .noticia {
-                        min-height: 100%;
-                        max-width: 100%;
-                        img {
-                            max-height: 400px;
-                        }
-                    }
-                    .noticia-1 {
-                        display: grid;
-                        grid-column: span 2;
-                        img {
-                            max-height: 100%;
-                        }
-                    }
-                    .noticia-4,
-                    .noticia-5,
-                    .noticia-2 {
-                        display: grid;
-                        img {
-                            max-height: 100%;
-                        }
-                    }
-                }
                 //Cancionero
                 .cancionero {
                     margin: 0;

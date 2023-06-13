@@ -145,6 +145,10 @@
     }
     
     //Boton
+    button:hover {
+        scale: 1.05;
+    }
+    
     .boton {
         background-color: wheat;
         -webkit-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
