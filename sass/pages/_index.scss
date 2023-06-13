@@ -141,8 +141,8 @@
                 // Header
                 .carrusel {
                     img {
-                        min-height: 530px;
-                        max-height: 530px;
+                        min-height: 500px;
+                        max-height: 500px;
                     }
                 }
                 //Noticias
@@ -222,6 +222,13 @@
             
             // Pc
             @include desktop {
+                // Header
+                .carrusel {
+                    img {
+                        min-height: 600px;
+                        max-height: 600px;
+                    }
+                }
                 // Main
                 //Cancionero
                 .cancionero {
