@@ -1,12 +1,11 @@
 // Import
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 // Contenido Principal
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
+    @extend %flex-wrap;
     gap: 1rem;
-    justify-content: center;
     margin-top: 2rem;
 }
 

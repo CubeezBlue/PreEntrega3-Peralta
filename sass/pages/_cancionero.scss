@@ -1,21 +1,18 @@
 //Import 
 @import "../utilidades/variables";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 
 /* Cancionero */
 
 .albunes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    @extend %flex-wrap;
+    gap: 2rem;
 }
 
 .single {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    @extend %flex-wrap;
+    gap: 2rem;
 }
 
 // Media Query
