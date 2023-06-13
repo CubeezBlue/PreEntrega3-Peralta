@@ -1,18 +1,24 @@
 // Media Query
 @mixin celular {
-    @media (min-width: 450px) {
+    @media (min-width: 576px) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: 850px) {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin notebook {
+    @media (min-width: 920px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
         @content;
     }
 }

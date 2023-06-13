@@ -4,30 +4,25 @@
 
 /* Cancionero */
 
+.albunes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 // Media Query
 @include desktop {
-    .cancionero {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-    .albunes {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-    }
+    // Header
+    // Contenido Principal
     .albunes-i {
         width: 100%;
-    }
-    .single {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-        width: 100%;
-    }
-    .canciones {
-        width: 250px;
     }
 }
