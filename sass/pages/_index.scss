@@ -144,6 +144,10 @@
                             max-height: 400px;
                         }
                     }
+                    .noticia:hover {
+                        scale: 1.01;
+                        transition: 0.5s;
+                    }
                     .noticia-1 {
                         display: grid;
                         grid-column: span 2;
