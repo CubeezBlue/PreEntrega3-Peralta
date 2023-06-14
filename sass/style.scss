@@ -47,6 +47,10 @@
         text-align: center;
     }
     
+    p {
+        margin-bottom: 0;
+    }
+    
     a {
         text-decoration: none;
     }
@@ -265,6 +269,7 @@
     @import "pages/index";
     @import "pages/nosotros";
     @import "pages/noticias";
+    @import "pages/noticia";
     @import "pages/galeria";
     @import "pages/contacto";
     @import "pages/blog";
