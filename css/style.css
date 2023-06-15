@@ -620,7 +620,7 @@ button:hover {
     gap: 1rem; }
   .container-b2 .division {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0; }
     .container-b2 .division .posts {
       display: flex;
@@ -667,7 +667,11 @@ button:hover {
 @media (min-width: 576px) {
   .container-b2 .division .posts .post {
     flex-direction: row;
-    gap: 1rem; }
+    gap: 1rem;
+    min-width: 100%;
+    justify-content: space-between; }
+    .container-b2 .division .posts .post .info-post {
+      width: 100%; }
     .container-b2 .division .posts .post .iconos {
       flex-direction: column;
       gap: 1rem; } }
