@@ -669,6 +669,7 @@ button:hover {
     flex-direction: row;
     gap: 1rem;
     min-width: 100%;
+    max-width: 900px;
     justify-content: space-between; }
     .container-b2 .division .posts .post .info-post {
       width: 100%; }
