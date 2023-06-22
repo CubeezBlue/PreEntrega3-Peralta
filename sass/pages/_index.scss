@@ -1,235 +1,235 @@
-            // Import
-            @import "../utilidades/variables";
-            @import "../utilidades/mixin";
-            // Header
-            .carrusel {
-                border-top: 2px solid $blanco;
-                border-bottom: 2px solid $blanco;
-                margin-top: 2rem;
-                img {
-                    min-height: 340px;
-                    max-height: 340px;
-                }
-            }
-            
-            // Registro
-            .box {
-                background-color: $naranja;
-                border-radius: 24px 24px 24px 24px;
-                -moz-border-radius: 24px 24px 24px 24px;
-                -webkit-border-radius: 24px 24px 24px 24px;
-                border: 0px solid #000000;
-                width: 70%;
-                -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                margin: 0 auto;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                padding: 0.5rem;
-                .registro {
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    text-align: center;
-                    font-family: 'Roboto Slab', serif;
-                    font-size: large;
-                    font-weight: bold;
-                }
-                .img-registro {
-                    width: 100px;
-                }
-                a {
-                    color: $blanco;
-                    margin-left: 0.5rem;
-                }
-            }
-            
-            // Noticias
-            .container h2 {
-                text-align: center;
-                margin: 20px;
-                font-size: xx-large;
-                color: $blanco;
-            }
-            
-            .noticias {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 3rem;
-            }
-            
-            .noticia:hover {
-                scale: 0.97;
-            }
-            
-            .noticia-5,
-            .noticia-1,
-            .noticia-3 {
-                display: none;
-            }
-            
-            // Cancionero
-            .albunes {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                margin-bottom: 2rem;
-            }
-            
-            // Media Query
-            // Tablet Mas Chica
-            @include celular {
-                // Header
-                .carrusel {
-                    img {
-                        object-fit: cover;
-                        object-position: center;
-                        min-height: 430px;
-                        max-height: 430px;
-                    }
-                }
-                //Noticia
-                .noticia {
-                    max-width: 70%;
-                    img {
-                        max-height: 500px;
-                    }
-                }
-            }
-            
-            .noticia {
+// Import
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+// Header
+.carrusel {
+    border-top: 2px solid $blanco;
+    border-bottom: 2px solid $blanco;
+    margin-top: 2rem;
+    img {
+        min-height: 340px;
+        max-height: 340px;
+    }
+}
+
+// Registro
+.box {
+    background-color: $naranja;
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid #000000;
+    width: 70%;
+    -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    .registro {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: large;
+        font-weight: bold;
+    }
+    .img-registro {
+        width: 100px;
+    }
+    a {
+        color: $blanco;
+        margin-left: 0.5rem;
+    }
+}
+
+// Noticias
+.container h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: xx-large;
+    color: $blanco;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.noticia:hover {
+    scale: 0.97;
+}
+
+.noticia-5,
+.noticia-1,
+.noticia-3 {
+    display: none;
+}
+
+// Cancionero
+.albunes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+// Media Query
+// Tablet Mas Chica
+@include celular {
+    // Header
+    .carrusel {
+        img {
+            object-fit: cover;
+            object-position: center;
+            min-height: 430px;
+            max-height: 430px;
+        }
+    }
+    //Noticia
+    .noticia {
+        max-width: 70%;
+        img {
+            max-height: 500px;
+        }
+    }
+}
+
+.noticia {
+    max-height: 100%;
+    padding: 1rem;
+    background-color: $blanco;
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
+    justify-self: center;
+    width: 70%;
+    .info-noticia {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-height: 100%;
+        max-width: 100%;
+        h3 {
+            margin-top: 0.5rem;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 1rem;
+            max-height: 500px;
+        }
+        a,
+        p {
+            color: black;
+        }
+    }
+}
+
+// Tablet
+@include tablet {
+    // Header
+    .carrusel {
+        img {
+            min-height: 500px;
+            max-height: 500px;
+        }
+    }
+    //Noticias
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+        .noticia {
+            width: 90%;
+            min-height: 100%;
+            max-width: 100%;
+            img {
                 max-height: 100%;
-                padding: 1rem;
-                background-color: $blanco;
-                border-radius: 24px 24px 24px 24px;
-                -moz-border-radius: 24px 24px 24px 24px;
-                -webkit-border-radius: 24px 24px 24px 24px;
-                border: 0px solid #000000;
-                -webkit-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                box-shadow: 0px 9px 18px 3px rgba(0, 0, 0, 0.75);
-                justify-self: center;
-                width: 70%;
-                .info-noticia {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1rem;
-                    max-height: 100%;
-                    max-width: 100%;
-                    h3 {
-                        margin-top: 0.5rem;
-                    }
-                    img {
-                        max-width: 100%;
-                        border-radius: 1rem;
-                        max-height: 500px;
-                    }
-                    a,
-                    p {
-                        color: black;
-                    }
-                }
             }
-            
-            // Tablet
-            @include tablet {
-                // Header
-                .carrusel {
-                    img {
-                        min-height: 500px;
-                        max-height: 500px;
-                    }
-                }
-                //Noticias
-                .noticias {
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    gap: 3rem;
-                    .noticia {
-                        width: 90%;
-                        min-height: 100%;
-                        max-width: 100%;
-                        img {
-                            max-height: 100%;
-                        }
-                    }
-                    .noticia-1 {
-                        display: grid;
-                        grid-column: span 2;
-                        img {
-                            max-height: 100%;
-                        }
-                    }
-                    .noticia-3 {
-                        display: grid;
-                        grid-column: span 2;
-                        img {
-                            max-height: 100%;
-                        }
-                    }
-                    .noticia-2 {
-                        display: grid;
-                    }
-                    .noticia-6 {
-                        display: none;
-                    }
-                }
+        }
+        .noticia-1 {
+            display: grid;
+            grid-column: span 2;
+            img {
+                max-height: 100%;
             }
-            
-            //Notebook
-            @include notebook {
-                .header-2 {
-                    .titulo {
-                        gap: 1rem;
-                    }
-                }
-                // Header
-                #header {
-                    margin-bottom: 0;
-                }
-                .carrusel {
-                    border-top: 2px solid $azul;
-                    border-bottom: 2px solid $blanco;
-                    margin-top: 0;
-                    img {
-                        max-height: 570px;
-                    }
-                }
-                .noticias {
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
-                    gap: 3rem;
-                    .noticia {
-                        width: 90%;
-                        img {
-                            max-height: 500px;
-                        }
-                    }
-                    .noticia-5,
-                    .noticia-6 {
-                        display: grid;
-                    }
-                    .noticia-3 {
-                        display: none;
-                    }
-                }
+        }
+        .noticia-3 {
+            display: grid;
+            grid-column: span 2;
+            img {
+                max-height: 100%;
             }
-            
-            // Pc
-            @include desktop {
-                // Header
-                .carrusel {
-                    img {
-                        min-height: 600px;
-                        max-height: 600px;
-                    }
-                }
-                // Main
-                //Cancionero
-                .cancionero {
-                    margin: 0;
-                }
+        }
+        .noticia-2 {
+            display: grid;
+        }
+        .noticia-6 {
+            display: none;
+        }
+    }
+}
+
+//Notebook
+@include notebook {
+    .header-2 {
+        .titulo {
+            gap: 1rem;
+        }
+    }
+    // Header
+    #header {
+        margin-bottom: 0;
+    }
+    .carrusel {
+        border-top: 2px solid $azul;
+        border-bottom: 2px solid $blanco;
+        margin-top: 0;
+        img {
+            max-height: 570px;
+        }
+    }
+    .noticias {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+        .noticia {
+            width: 90%;
+            img {
+                max-height: 500px;
             }
+        }
+        .noticia-5,
+        .noticia-6 {
+            display: grid;
+        }
+        .noticia-3 {
+            display: none;
+        }
+    }
+}
+
+// Pc
+@include desktop {
+    // Header
+    .carrusel {
+        img {
+            min-height: 600px;
+            max-height: 600px;
+        }
+    }
+    // Main
+    //Cancionero
+    .cancionero {
+        margin: 0;
+    }
+}
