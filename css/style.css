@@ -121,6 +121,9 @@ footer {
 button:hover {
   scale: 1.05; }
 
+button {
+  transition: 0.5s; }
+
 .boton {
   background-color: wheat;
   -webkit-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
@@ -157,11 +160,11 @@ button:hover {
       column-gap: 2rem;
       margin-right: 2rem; }
       .header-2 .barra-1 a:hover {
-        scale: 0.8;
-        transition: 1s; }
+        scale: 0.8; }
       .header-2 .barra-1 a {
         color: #0a1f55;
-        font-weight: bold; }
+        font-weight: bold;
+        transition: 1s; }
   footer .footer {
     margin-top: 3rem; }
     footer .footer #logo-4 {
@@ -245,6 +248,9 @@ button:hover {
 
 .noticia:hover {
   scale: 0.97; }
+
+.noticia {
+  transition: 0.3s; }
 
 .noticia-5,
 .noticia-1,

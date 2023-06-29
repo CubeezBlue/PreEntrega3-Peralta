@@ -153,6 +153,10 @@ button:hover {
     scale: 1.05;
 }
 
+button {
+    transition: 0.5s;
+}
+
 .boton {
     background-color: wheat;
     -webkit-box-shadow: 0px 7px 17px 5px rgba(0, 0, 0, 0.75);
@@ -199,11 +203,11 @@ button:hover {
             margin-right: 2rem;
             a:hover {
                 scale: 0.8;
-                transition: 1s;
             }
             a {
                 color: $azul;
                 font-weight: bold;
+                transition: 1s;
             }
         }
     }
