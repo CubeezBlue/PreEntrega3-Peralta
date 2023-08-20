@@ -524,6 +524,16 @@ button {
   width: 100px;
   height: 100px; }
 
+.btn-X {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: whitesmoke; }
+
+.btn-X:hover {
+  cursor: pointer; }
+
 .img-galeria:hover {
   cursor: pointer;
   transform: scale(1.3);
@@ -538,7 +548,22 @@ button {
 @media (min-width: 768px) {
   .img-galeria {
     width: 180px;
-    height: 180px; } }
+    height: 180px; }
+  .expand-img {
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    max-height: 600px; }
+  .full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 
 @media (min-width: 1200px) {
   .img-galeria {
@@ -622,6 +647,9 @@ button {
     justify-content: center;
     align-items: center;
     gap: 1rem; }
+    .container-b2 .crear-post .expand {
+      height: 300px;
+      transition: 2s; }
   .container-b2 .division {
     display: flex;
     justify-content: center;
@@ -650,7 +678,10 @@ button {
   .container-b2 .input-post {
     width: 600px;
     height: 50px;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    resize: none; }
 
 .menu-perfil {
   display: flex;
@@ -661,6 +692,12 @@ button {
 .iconos {
   display: flex;
   justify-content: end; }
+  .iconos button {
+    border-style: none;
+    color: inherit;
+    background: none; }
+  .iconos .like {
+    background-color: #ffd000; }
 
 .icon {
   width: 50px; }
