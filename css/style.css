@@ -525,6 +525,7 @@ button {
   height: 100px; }
 
 .btn-X {
+  display: none;
   position: absolute;
   top: 5%;
   right: 5%;
