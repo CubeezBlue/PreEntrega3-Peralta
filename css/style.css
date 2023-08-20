@@ -767,7 +767,7 @@ button {
 .header-login {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
   background-color: whitesmoke;
   gap: 1rem;
@@ -779,10 +779,10 @@ button {
     gap: 2rem; }
   .header-login .barra-1 {
     display: none; }
+  .header-login nav {
+    display: none; }
   .header-login h1 {
     color: #0a1f55; }
-  .header-login #logo-2 {
-    display: none; }
 
 .bg-login {
   display: flex;
@@ -796,12 +796,11 @@ button {
     flex-direction: column;
     gap: 2rem;
     margin: auto;
-    width: 70%;
     padding: 2rem; }
     .bg-login .login .inp-login {
       display: flex;
       flex-direction: column;
-      padding-left: 3rem; }
+      padding-left: 10rem; }
       .bg-login .login .inp-login label {
         padding-bottom: 1rem;
         padding-left: 0.5rem;

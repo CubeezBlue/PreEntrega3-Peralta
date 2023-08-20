@@ -6,7 +6,7 @@
     .header-login {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 1rem;
         background-color: $blanco;
         gap: 1rem;
@@ -20,11 +20,11 @@
         .barra-1 {
             display: none;
         }
+        nav {
+            display: none;
+        }
         h1 {
             color: $azul;
-        }
-        #logo-2 {
-            display: none;
         }
     }
     
@@ -42,12 +42,11 @@
             flex-direction: column;
             gap: 2rem;
             margin: auto;
-            width: 70%;
             padding: 2rem;
             .inp-login {
                 display: flex;
                 flex-direction: column;
-                padding-left: 3rem;
+                padding-left: 10rem;
                 label {
                     padding-bottom: 1rem;
                     padding-left: 0.5rem;
