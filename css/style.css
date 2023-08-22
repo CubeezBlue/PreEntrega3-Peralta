@@ -790,7 +790,8 @@ button {
   .bg-login h1 {
     margin-bottom: 5rem;
     padding-right: 5rem;
-    padding-left: 5rem; }
+    padding-left: 5rem;
+    color: whitesmoke; }
   .bg-login .login {
     display: flex;
     flex-direction: column;
